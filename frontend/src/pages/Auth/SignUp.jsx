@@ -165,7 +165,8 @@ const SignUp = () => {
       login(user, token);
 
       // Redirect user
-      window.location.href = user.role === "employer" ? "/employer-dashboard" : "/find-jobs";
+      // window.location.href = user.role === "employer" ? "/employer-dashboard" : "/find-jobs";
+      window.location.href = '/login';
     } catch (err) {
       setOtpState(prev => ({
         ...prev,
