@@ -18,7 +18,7 @@ const DashBoard = () => {
   const [newTitle, setNewTitle] = useState("");
   const [allResumes, setAllResumes] = useState([]);
 
-  // ✅ Only fetch resumes if authenticated
+  // Only fetch resumes if authenticated
   const fetchAllResumes = async () => {
     if (!isAuthenticated) return;
 

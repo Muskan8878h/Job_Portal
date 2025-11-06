@@ -260,7 +260,7 @@ const SignUp = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6" autoComplete="off">
           {/* Full Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -287,42 +287,46 @@ const SignUp = () => {
           </div>
 
           {/* Password */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
-              Password *
-            </label>
-            <div className="relative">
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-              <input
-                type={formState.showPassword ? "text" : "password"}
-                name="password"
-                value={formData.password}
-                onChange={handleInputChange}
-                className={`w-full pl-10 pr-10 py-3 rounded-lg border ${formState.errors.password ? "border-red-500" : "border-gray-300"
+          {/* Password */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Password *
+              </label>
+              <div className="relative">
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <input
+                  type={formState.showPassword ? "text" : "password"}
+                  name="password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  autoComplete="new-password"   // ✅ Add this line here
+                  className={`w-full pl-10 pr-10 py-3 rounded-lg border ${
+                    formState.errors.password ? "border-red-500" : "border-gray-300"
                   } focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors`}
-                placeholder="Enter your password"
-              />
-              <button
-                type="button"
-                onClick={() =>
-                  setFormState(prev => ({ ...prev, showPassword: !prev.showPassword }))
-                }
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
-              >
-                {formState.showPassword ? (
-                  <EyeOff className="h-5 w-5" />
-                ) : (
-                  <Eye className="h-5 w-5" />
-                )}
-              </button>
+                  placeholder="Enter your password"
+                />
+                <button
+                  type="button"
+                  onClick={() =>
+                    setFormState(prev => ({ ...prev, showPassword: !prev.showPassword }))
+                  }
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                >
+                  {formState.showPassword ? (
+                    <EyeOff className="h-5 w-5" />
+                  ) : (
+                    <Eye className="h-5 w-5" />
+                  )}
+                </button>
+              </div>
+              {formState.errors.password && (
+                <p className="text-red-500 text-sm mt-1 flex items-center">
+                  <AlertCircle className="w-4 h-4 mr-1" />
+                  {formState.errors.password}
+                </p>
+              )}
             </div>
-            {formState.errors.password && (
-              <p className="text-red-500 text-sm mt-1 flex items-center">
-                <AlertCircle className="w-4 h-4 mr-1" />
-                {formState.errors.password}
-              </p>
-            )}
-          </div>
+
 
           {/* Avatar */}
           <div>

@@ -183,6 +183,7 @@ const Login = () => {
                 name='password'
                 value={formData.password}
                 onChange={handleInputChange}
+                autoComplete="new-password"
                 className={`w-full pl-10 pr-10 py-3 rounded-lg border ${formState.errors.email ? 'border-red-500' : 'border-gray-300'} focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors `}
                 placeholder="Enter your password"
               />
