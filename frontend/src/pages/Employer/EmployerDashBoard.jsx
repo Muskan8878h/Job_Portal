@@ -124,14 +124,14 @@ const EmployerDashBoard = () => {
               trendValue={`${dashboardData?.counts?.trends?.totalApplications || 0}%`}
               color="green"
             />
-            <StatCard
+            {/* <StatCard
               title="Hired"
               value={dashboardData?.counts?.totalHired || 0}
               icon={CheckCircle2}
               trend={true}
               trendValue={`${dashboardData?.counts?.trends?.totalHired || 0}%`}
               color="purple"
-            />
+            /> */}
           </div>
 
           {/* Recent Activity */}
