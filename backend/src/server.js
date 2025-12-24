@@ -44,7 +44,7 @@ app.use(cors({
 
 
 app.use(express.json());
-app.options("/*", cors());
+app.options("/", cors());
 
 connectDB();
 app.use("/uploads", express.static(uploadPath));
