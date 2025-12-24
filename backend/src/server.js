@@ -20,19 +20,31 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(
-  cors({
-    // origin: ["http://localhost:5173", "http://localhost:5174"],
-    origin: [
+// app.use(
+//   cors({
+//     // origin: ["http://localhost:5173", "http://localhost:5174"],
+//     origin: [
+//     "http://localhost:5173",
+//     "https://job-portal-1-knsq.onrender.com"
+//   ],
+//     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//   })
+// );
+
+app.use(cors({
+  origin: [
     "http://localhost:5173",
     "https://job-portal-1-knsq.onrender.com"
   ],
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
+
+
 app.use(express.json());
-app.options("*", cors());
+app.options("/*", cors());
 
 connectDB();
 app.use("/uploads", express.static(uploadPath));
