@@ -32,6 +32,7 @@ app.use(
   })
 );
 app.use(express.json());
+app.options("*", cors());
 
 connectDB();
 app.use("/uploads", express.static(uploadPath));
