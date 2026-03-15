@@ -15,9 +15,9 @@ The project is divided into two main parts:
 
 Job-Portal
 │
-├── frontend # React + Vite UI
+├── frontend   # React + Vite UI
 │
-└── backend # Node.js + Express API
+└── backend    # Node.js + Express API
 
 
 ---
