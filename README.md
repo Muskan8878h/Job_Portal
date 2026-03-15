@@ -94,21 +94,20 @@ User Logged In
 ---
 
 # 💼 Job Application Flow
-------------------------------
-|Employer Posts Job          |
-|   ↓                        |
-|Job Stored in Database      |
-|   ↓                        |
-|Job Seeker Browses Jobs     |
-|   ↓                        |
-|User Applies                |
-|   ↓                        |
-|Application Stored          |
-|   ↓                        |
-|Employer Reviews Application|
-|   ↓                        | 
-|Status Updated              |
-------------------------------
+
+Employer Posts Job
+    ↓
+Job Stored in Database
+    ↓
+Job Seeker Browses Jobs
+    ↓
+User Applies
+    ↓
+Application Stored
+    ↓   
+Employer Reviews Application
+    ↓
+Status Updated
 
 
 ---
