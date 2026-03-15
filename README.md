@@ -14,11 +14,11 @@ The system is built using a **modern MERN Stack architecture** with secure authe
 The project is divided into two main parts:
 
 Job-Portal
-----------------------------
+
 frontend   # React + Vite UI
-------------------------------
+
 backend    # Node.js + Express API`
--------------------------------------
+
 
 ---
 
@@ -78,17 +78,17 @@ User → Frontend (React)
 
 # 🔐 Authentication Flow
 
-User Register
+User Register </br>
     ↓
-Password Hash (bcrypt)
+Password Hash (bcrypt) </br>
     ↓
-OTP Sent via Email
+OTP Sent via Email </br>
     ↓
-User verifies OTP
+User verifies OTP </br>
     ↓
-JWT Token Generated
+JWT Token Generated </br>
     ↓
-User Logged In
+User Logged In </br>
 
 
 ---
