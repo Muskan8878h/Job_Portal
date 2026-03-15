@@ -94,14 +94,20 @@ User Logged In
 ---
 
 # 💼 Job Application Flow
-```mermaid
-flowchart TD
-A[Employer Posts Job] --> B[Job Stored in Database]
-B --> C[Job Seeker Browses Jobs]
-C --> D[User Applies]
-D --> E[Application Stored]
-E --> F[Employer Reviews Application]
-F --> G[Status Updated]
+
+Employer Posts Job
+    ↓
+Job Stored in Database
+    ↓
+Job Seeker Browses Jobs
+    ↓
+User Applies
+    ↓
+Application Stored
+    ↓   
+Employer Reviews Application
+    ↓
+Status Updated
 
 
 ---
