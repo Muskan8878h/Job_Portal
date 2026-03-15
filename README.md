@@ -237,6 +237,7 @@ frontend
 
 Stores both **Job Seekers and Employers**
 
+--------------------------------------------------------
 | Field              | Type   | Description             |
 |--------------------|--------|-------------------------|
 | name               | String | User name               |
@@ -256,6 +257,7 @@ Stores both **Job Seekers and Employers**
 
 Stores job postings.
 
+-----------------------
 | Field       | Type   |
 |-------------|--------|
 | title       | String |
@@ -283,6 +285,7 @@ Stores job postings.
 
 Tracks job applications.
 
+------------------------
 | Field     | Type     |
 |-----------|----------|
 | job       | ObjectId |
@@ -300,6 +303,7 @@ Tracks job applications.
 
 ## 4️⃣ Saved Job Schema
 
+------------------------
 | Field     | Type     |
 |-----------|----------|
 | jobseeker | ObjectId |
@@ -383,7 +387,7 @@ DELETE /api/resume/:id
 
 ## 1️⃣ Clone Repository
 
-```bash
+
 git clone `https://github.com/Muskan8878h/Job_Portal`
 
 `cd job-portal`
@@ -437,6 +441,7 @@ git clone `https://github.com/Muskan8878h/Job_Portal`
 
 ## 📦 Libraries Used
 
+---------------------------------
 | Library     | Purpose          |
 |-------------|------------------|
 | express     | API framework    |
@@ -454,6 +459,7 @@ git clone `https://github.com/Muskan8878h/Job_Portal`
 
 ## 🔄 Alternative Libraries
 
+--------------------------------------------
 | Current Library | Alternative             |
 |---------------- |-------------------------|
 | Express         | Fastify / NestJS        |
