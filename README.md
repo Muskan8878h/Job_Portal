@@ -64,14 +64,14 @@ backend    # Node.js + Express API`
 
 # 🔄 Project Flow
 
-User → Frontend (React)
-→ API Request
-→ Backend (Express)
-→ Controllers
-→ Models (Mongoose)
-→ MongoDB Database
-→ Response to Frontend
-→ UI Update
+User → Frontend (React) </br>
+→ API Request </br>
+→ Backend (Express)  </br>
+→ Controllers </br>
+→ Models (Mongoose) </br>
+→ MongoDB Database </br>
+→ Response to Frontend </br>
+→ UI Update </br>
 
 
 ---
@@ -79,15 +79,15 @@ User → Frontend (React)
 # 🔐 Authentication Flow
 
 User Register </br>
-    ↓
+    ↓ </br>
 Password Hash (bcrypt) </br>
-    ↓
+    ↓ </br>
 OTP Sent via Email </br>
-    ↓
+    ↓ </br>
 User verifies OTP </br>
-    ↓
+    ↓ </br>
 JWT Token Generated </br>
-    ↓
+    ↓ </br>
 User Logged In </br>
 
 
@@ -95,19 +95,19 @@ User Logged In </br>
 
 # 💼 Job Application Flow
 
-Employer Posts Job
-    ↓
-Job Stored in Database
-    ↓
-Job Seeker Browses Jobs
-    ↓
-User Applies
-    ↓
-Application Stored
-    ↓   
-Employer Reviews Application
-    ↓
-Status Updated
+Employer Posts Job </br>
+    ↓ </br>
+Job Stored in Database </br>
+    ↓ </br>
+Job Seeker Browses Jobs </br>
+    ↓ </br>
+User Applies </br>
+    ↓ </br>
+Application Stored </br>
+    ↓ </br>
+Employer Reviews Application </br>
+    ↓ </br>
+Status Updated </br>
 
 
 ---
@@ -115,47 +115,47 @@ Status Updated
 # 📂 Backend Folder Structure
 
 
-backend
-│
-├── config
-│ ├── db.js
-│ └── emailConfig.js
-│
-├── controllers
-│ ├── authController.js
-│ ├── jobController.js
-│ ├── applicationController.js
-│ ├── userController.js
-│ ├── savedController.js
-│ ├── analyticsController.js
-│ └── resumeController.js
-│
-├── middleware
-│ ├── authMiddleware.js
-│ └── uploadMiddleware.js
-│
-├── models
-│ ├── User.js
-│ ├── Job.js
-│ ├── Application.js
-│ ├── SavedJob.js
-│ ├── Analytics.js
-│ ├── Resume.js
-│ └── UserOTPVerification.js
-│
-├── routes
-│ ├── authRoutes.js
-│ ├── jobRoutes.js
-│ ├── applicationRoutes.js
-│ ├── userRoutes.js
-│ ├── savedRoutes.js
-│ ├── analyticsRoutes.js
-│ └── resumeRoutes.js
-│
-├── uploads
-├── server.js
-├── package.json
-└── .env
+backend </br>
+│ </br>
+├── config </br>
+│ ├── db.js </br>
+│ └── emailConfig.js </br>
+│ </br>
+├── controllers </br>
+│ ├── authController.js </br>
+│ ├── jobController.js </br>
+│ ├── applicationController.js </br>
+│ ├── userController.js </br>
+│ ├── savedController.js </br>
+│ ├── analyticsController.js </br>
+│ └── resumeController.js </br>
+│ </br>
+├── middleware </br>
+│ ├── authMiddleware.js </br>
+│ └── uploadMiddleware.js </br>
+│ </br>
+├── models </br>
+│ ├── User.js </br>
+│ ├── Job.js </br>
+│ ├── Application.js </br>
+│ ├── SavedJob.js </br>
+│ ├── Analytics.js </br>
+│ ├── Resume.js </br>
+│ └── UserOTPVerification.js </br>
+│ </br>
+├── routes </br>
+│ ├── authRoutes.js </br>
+│ ├── jobRoutes.js </br>
+│ ├── applicationRoutes.js </br>
+│ ├── userRoutes.js </br>
+│ ├── savedRoutes.js </br>
+│ ├── analyticsRoutes.js </br>
+│ └── resumeRoutes.js </br>
+│ </br>
+├── uploads </br>
+├── server.js </br>
+├── package.json </br>
+└── .env </br>
 
 
 ---
@@ -163,68 +163,68 @@ backend
 # 📂 Frontend Folder Structure
 
 
-frontend
-│
-├── src
-│
-│   ├── components
-│   │   ├── Cards
-│   │   ├── Input
-│   │   ├── layout
-│   │   ├── ResumeSections
-│   │   ├── ResumeTemplates
-│   │   ├── LoadingSpinner.jsx
-│   │   ├── Modal.jsx
-│   │   ├── Progress.jsx
-│   │   └── StatusBadge.jsx
-│   │
-│   ├── context
-│   │   └── AuthContext.jsx
-│   │
-│   ├── pages
-│   │   ├── Auth
-│   │   │   ├── Login.jsx
-│   │   │   └── SignUp.jsx
-│   │   │
-│   │   ├── Employer
-│   │   │   ├── EmployerDashBoard.jsx
-│   │   │   ├── JobPostingForm.jsx
-│   │   │   ├── ManageJobs.jsx
-│   │   │   ├── ApplicationViewer.jsx
-│   │   │   └── EmployerProfilePage.jsx
-│   │   │
-│   │   ├── JobSeeker
-│   │   │   ├── FindJob.jsx
-│   │   │   ├── JobDetails.jsx
-│   │   │   ├── SavedJobs.jsx
-│   │   │   └── UserProfile.jsx
-│   │   │
-│   │   ├── ResumeBuilder
-│   │   │   ├── DashBoard.jsx
-│   │   │   └── EditResume.jsx
-│   │   │
-│   │   ├── LandingPage
-│   │   └── NotFoundPage
-│   │
-│   ├── routes
-│   │   └── ProtectedRoute.jsx
-│   │
-│   ├── utils
-│   │   ├── apiPaths.js
-│   │   ├── axiosInstance.js
-│   │   ├── helper.js
-│   │   ├── uploadImage.js
-│   │   └── useTheme.js
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── index.html
-├── tailwind.config.js
-├── postcss.config.js
-├── vite.config.js
-└── package.json
+frontend </br>
+│ </br>
+├── src </br>
+│ </br>
+│   ├── components </br>
+│   │   ├── Cards </br>
+│   │   ├── Input </br>
+│   │   ├── layout </br>
+│   │   ├── ResumeSections </br>
+│   │   ├── ResumeTemplates </br>
+│   │   ├── LoadingSpinner.jsx </br>
+│   │   ├── Modal.jsx </br>
+│   │   ├── Progress.jsx </br>
+│   │   └── StatusBadge.jsx </br>
+│   │ </br>
+│   ├── context </br>
+│   │   └── AuthContext.jsx </br>
+│   │ </br>
+│   ├── pages </br>
+│   │   ├── Auth </br>
+│   │   │   ├── Login.jsx </br>
+│   │   │   └── SignUp.jsx </br>
+│   │   │ </br>
+│   │   ├── Employer </br>
+│   │   │   ├── EmployerDashBoard.jsx </br>
+│   │   │   ├── JobPostingForm.jsx </br>
+│   │   │   ├── ManageJobs.jsx </br>
+│   │   │   ├── ApplicationViewer.jsx </br>
+│   │   │   └── EmployerProfilePage.jsx </br>
+│   │   │ </br>
+│   │   ├── JobSeeker </br>
+│   │   │   ├── FindJob.jsx </br>
+│   │   │   ├── JobDetails.jsx </br>
+│   │   │   ├── SavedJobs.jsx </br>
+│   │   │   └── UserProfile.jsx </br>
+│   │   │ </br>
+│   │   ├── ResumeBuilder </br>
+│   │   │   ├── DashBoard.jsx </br>
+│   │   │   └── EditResume.jsx </br>
+│   │   │ </br>
+│   │   ├── LandingPage </br>
+│   │   └── NotFoundPage </br>
+│   │ </br>
+│   ├── routes </br>
+│   │   └── ProtectedRoute.jsx </br>
+│   │ </br>
+│   ├── utils </br>
+│   │   ├── apiPaths.js </br>
+│   │   ├── axiosInstance.js </br>
+│   │   ├── helper.js </br>
+│   │   ├── uploadImage.js </br>
+│   │   └── useTheme.js </br>
+│   │ </br>
+│   ├── App.jsx </br>
+│   ├── main.jsx </br>
+│   └── index.css </br>
+│ </br>
+├── index.html </br>
+├── tailwind.config.js </br>
+├── postcss.config.js </br>
+├── vite.config.js </br>
+└── package.json </br>
 
 
 
@@ -314,17 +314,17 @@ Tracks job applications.
 ## 5️⃣ Resume Schema
 
 
-Resume
-│
-├── profileInfo
-├── contactInfo
-├── workExperience
-├── education
-├── skills
-├── projects
-├── certifications
-├── languages
-└── interests
+Resume </br>
+│ </br>
+├── profileInfo </br>
+├── contactInfo </br>
+├── workExperience </br>
+├── education </br>
+├── skills </br>
+├── projects </br>
+├── certifications </br>
+├── languages </br>
+└── interests </br>
 
 
 ---
@@ -333,52 +333,51 @@ Resume
 
 ## Authentication
 
-
-POST /api/auth/register
-POST /api/auth/login
-POST /api/auth/verify-otp
-POST /api/auth/resend-otp
-GET /api/auth/me
+POST /api/auth/register </br>
+POST /api/auth/login </br>
+POST /api/auth/verify-otp </br>
+POST /api/auth/resend-otp </br>
+GET /api/auth/me </br>
 
 
 ## Jobs
 
 
-POST /api/jobs
-GET /api/jobs
-GET /api/jobs/:id
-PUT /api/jobs/:id
-DELETE /api/jobs/:id
-PUT /api/jobs/:id/toggle-close
-GET /api/jobs/get-jobs-employer
+POST /api/jobs </br>
+GET /api/jobs </br>
+GET /api/jobs/:id </br>
+PUT /api/jobs/:id </br>
+DELETE /api/jobs/:id </br>
+PUT /api/jobs/:id/toggle-close </br>
+GET /api/jobs/get-jobs-employer </br>
 
 
 ## Applications
 
 
-POST /api/applications/:jobId
-GET /api/applications/my
-GET /api/applications/job/:jobId
-GET /api/applications/:id
-PUT /api/applications/:id/status
+POST /api/applications/:jobId </br>
+GET /api/applications/my </br>
+GET /api/applications/job/:jobId </br>
+GET /api/applications/:id </br>
+PUT /api/applications/:id/status </br>
 
 
 ## Saved Jobs
 
 
-POST /api/save-jobs/:jobId
-DELETE /api/save-jobs/:jobId
-GET /api/save-jobs/my
+POST /api/save-jobs/:jobId </br> 
+DELETE /api/save-jobs/:jobId </br>
+GET /api/save-jobs/my </br>
 
 
 ## Resume
 
 
-POST /api/resume
-GET /api/resume
-GET /api/resume/:id
-PUT /api/resume/:id
-DELETE /api/resume/:id
+POST /api/resume </br>
+GET /api/resume </br>
+GET /api/resume/:id </br>
+PUT /api/resume/:id </br>
+DELETE /api/resume/:id </br>
 
 
 ---
