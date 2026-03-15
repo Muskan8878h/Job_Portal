@@ -14,8 +14,10 @@ The system is built using a **modern MERN Stack architecture** with secure authe
 The project is divided into two main parts:
 
 Job-Portal
- frontend   # React + Vite UI
- backend    # Node.js + Express API`
+
+frontend   # React + Vite UI
+
+backend    # Node.js + Express API`
 
 
 ---
@@ -92,20 +94,21 @@ User Logged In
 ---
 
 # 💼 Job Application Flow
-
-Employer Posts Job
-    ↓
-Job Stored in Database
-    ↓
-Job Seeker Browses Jobs
-    ↓
-User Applies
-    ↓
-Application Stored
-    ↓   
-Employer Reviews Application
-    ↓
-Status Updated
+------------------------------
+|Employer Posts Job          |
+|   ↓                        |
+|Job Stored in Database      |
+|   ↓                        |
+|Job Seeker Browses Jobs     |
+|   ↓                        |
+|User Applies                |
+|   ↓                        |
+|Application Stored          |
+|   ↓                        |
+|Employer Reviews Application|
+|   ↓                        | 
+|Status Updated              |
+------------------------------
 
 
 ---
